@@ -9,12 +9,16 @@ import { MenuPage } from './menu.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'menu',
     component: MenuPage,
     children: [
     { path: 'first', loadChildren: '../first/first.module#FirstPageModule' },
     { path: 'second', loadChildren: '../second/second.module#SecondPageModule' },
     ]
+  },
+  {
+      path: '',
+      redirectTo: '/menu/first'
   }
 ];
 

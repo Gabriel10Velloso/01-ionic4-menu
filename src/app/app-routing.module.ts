@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
+//   { path: '**', redirectTo: 'menu'},
 const routes: Routes = [
-  { path: '**', redirectTo: 'menu'},
-  { path: 'menu', loadChildren: './pages/menu/menu.module#MenuPageModule' },
+
+  { path: '', loadChildren: './pages/menu/menu.module#MenuPageModule' },
 
 
 ];

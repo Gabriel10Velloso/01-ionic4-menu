@@ -1,9 +1,19 @@
 <ion-header>
   <ion-toolbar>
+ 
+    <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
     <ion-title>first</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content pedding>
+    <ion-menu-toggle>
+        <ion-button expand="full">Full Button</ion-button>
+    </ion-menu-toggle>
 
+    <ion-button expand="full" (click)="openMenu()">Full Button</ion-button>
+    <ion-button expand="full" routerLink="/menu/second">Go to second Menu</ion-button>
 </ion-content>
