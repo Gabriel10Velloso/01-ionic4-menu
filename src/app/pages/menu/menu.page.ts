@@ -19,13 +19,13 @@ export class MenuPage implements OnInit {
         }
     ];
 
-    // selectedPath = '';
+    selectedPath = '';
 
   constructor(private route: Router) {
-    //   this.route.events.subscribe((event: RouterEvent) => {  // marca a rota no menu
-    //       this.selectedPath = event.url;
-    //       console.log(event.url);
-    //   });
+      this.route.events.subscribe((event: RouterEvent) => {  // marca a rota no menu
+          this.selectedPath = event.url;
+          console.log(event.url);
+      });
   }
 
   ngOnInit() {
